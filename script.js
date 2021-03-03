@@ -1,11 +1,19 @@
 $(document).ready(function(){
-    // let getURL = window.location
-    // console.log(getURL);
-    $.post("functions.php", {
-        folder : "/"
-    },
+
+    // $.post("functions.php", {
+    //     folder : "/"
+    // },
+    //     function(data){
+    //         console.log(data)
+    //         $("#fileExplorer").html(data)
+    //     })
+
+    $.post(
+        "functions.php", 
+        { path : "/"},
         function(data){
-            console.log(data)
-            $("#fileExplorer").html(data)
-        })
+            $('#main').html(data);
+        }
+    )
+
 });
