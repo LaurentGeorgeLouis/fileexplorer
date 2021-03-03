@@ -12,7 +12,7 @@ $(document).ready(function(){
         "functions.php", 
         { path : "/"},
         function(data){
-            $('#main').html(data);
+            $('#fileExplorer').html(data);
         }
     )
 
