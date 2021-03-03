@@ -1,3 +1,6 @@
 .folder{
     background-color: chartreuse;
 }
+.folder:hover{
+    color:red;
+}
